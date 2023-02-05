@@ -102,3 +102,7 @@ footer li a {
   font-size: 00.9em;
   text-decoration: underline;
 }
+.bottom {
+  padding: 10px;
+  margin: 40px;
+}
