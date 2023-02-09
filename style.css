@@ -107,7 +107,14 @@ nav li a:hover {
   display: flex;
   border-radius: 5px;
 }
-
+.mercedes {
+  padding-top: 8em;
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgb(236, 125, 125);
+  display: flex;
+  /* border-radius: 5px; */
+}
 button {
   box-sizing: border-box;
   width: 100px;
