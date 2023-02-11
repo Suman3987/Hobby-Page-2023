@@ -2,9 +2,6 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-
-  /* width: auto;
-  height: auto; */
 }
 nav {
   width: 100%;
@@ -13,6 +10,9 @@ nav {
   padding: 0px 100px;
   position: fixed;
   background-image: linear-gradient(#033747, #012733);
+}
+nav .logo {
+  float: left;
 }
 nav .logo p {
   font-size: 2em;
@@ -34,7 +34,7 @@ nav li {
 nav li a {
   font-size: 18px;
   text-transform: uppercase;
-  padding: 0px 30px;
+  padding: 0px 20px;
   color: #fff;
   text-decoration: none;
 }
@@ -42,6 +42,7 @@ nav li a:hover {
   color: #ff8c69;
   transition: all 0.4s ease 0s;
 }
+
 .checkbtn {
   color: #fff;
   font-size: 25px;
@@ -130,9 +131,9 @@ button:hover {
 }
 footer {
   padding: 5px;
+  line-height: 30px;
   background-color: #033747;
   color: #fff;
-
   text-align: center;
 }
 footer li {
@@ -145,23 +146,6 @@ footer li a {
   font-size: 00.9em;
   text-decoration: underline;
 }
-.bottom {
-  padding: 10px;
-  margin: 40px;
-}
-
-@media screen and (max-width: 1200px) {
-  .navbar ul {
-    display: none;
-  }
-  .menu-btn-mobile {
-    display: block;
-    cursor: pointer;
-    background: #e5e8ea;
-    padding: 0.4em 1em;
-    border-radius: 0.7em;
-  }
-}
 
 @media screen and (max-width: 990px) {
   nav {
@@ -171,27 +155,32 @@ footer li a {
     display: block;
     /* color: #000; */
   }
-   nav.logo p{
-     font-size: 30px; 
-}
-nav ul {
-  width: 100%;
-  height: 100vh;
-  /* background-color: #53694c; */
-  position: fixed;
-  top: 75px;
-  left: 100%;
-  text-align: center;
-}
-nav ul li {
-  display: block;
-  margin: 60px 0px;
-  line-height: 20px;
-}
-img{}
-
-/* @media screen and (max-width: 450px) {
-  html {
-    font-size: 8px;
+  nav.logo p {
+    font-size: 30px;
   }
+  nav ul {
+    width: 100%;
+    height: 100vh;
+    background-color: #53694c;
+    position: fixed;
+    top: 75px;
+    left: 100%;
+    text-align: center;
+    transition: 0.4s ease;
+  }
+  nav ul li {
+    display: block;
+    margin: 60px 0px;
+    line-height: 20px;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  /* .background {
+  background-image:url('Image/ford\ mustang.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:calc(100vh - 75px) ;
 } */
+}
